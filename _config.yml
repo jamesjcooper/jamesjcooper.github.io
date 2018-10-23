@@ -105,7 +105,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Aspiring Data Scientist and MSc in Predictive Analytics from DePaul University"
   location         : "Chicago, Illinois"
-  email            :
+  email            : "jcooper23@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -121,7 +121,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/jamesjcooper"
+      # url: "jamesjcooper"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -137,10 +137,10 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: https://github.com/jamesjcooper
+      # url: "jamesjcooper"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-gitlab"
-      # url: https://www.linkedin.com/
+      icon: "fab fa-fw fa-linkedin"
+      # url: "james-cooper-6b74227"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
