@@ -105,11 +105,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Aspiring Data Scientist and MSc in Predictive Analytics from DePaul University"
   location         : "Chicago, Illinois"
-  email            : #"jcooper23@gmail.com"
+  #email            : #"jcooper23@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:jcooler23@gmail.com
+      url: mailto:jcooper23@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
