@@ -1,9 +1,11 @@
-# main links
-main:
-- title: "About"
-  url: /about/
-- title: "Data Science Posts by Tags"
-  url: /machine-learning/
+--- 
+main: 
+  - 
+    title: About
+    url: /about/
+  - 
+    title: "Data Science Posts by Tags"
+    url: /machine-learning/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
