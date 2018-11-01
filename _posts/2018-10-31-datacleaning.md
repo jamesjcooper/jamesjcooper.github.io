@@ -3,7 +3,7 @@ title: "Getting Started with Data Cleaning"
 date: 2018-10-31
 tags: [data science, data cleaning]
 header:
-  image: "/images/datacleaning"
+  image: "/images/datacleaning/datacleaning.jpg"
 excerpt:"Data Cleaning, Data Science"
 mathjax: "true"
 ---
@@ -23,8 +23,8 @@ Here's some **bold** text.
 What  about a [link](https://github.com/jamesjcooper)
 
 Here's a bulleted list:
-*First Item
--Second Item
+* First Item
+- Second Item
 
 Here's a numbered list:
 1. First
@@ -32,13 +32,14 @@ Here's a numbered list:
 3. Third
 
 Python code block:
-'''python
+```python
+
     import numpy as np
-    
-    def test_function(x,y):
-     z = np.sum(x,y)
-     return z
-'''
+
+    def test_function(x, y):
+      z = np.sum(x,y)
+      return z
+```
 
 '''r
 library(tidyverse)
