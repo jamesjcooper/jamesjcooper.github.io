@@ -1,7 +1,6 @@
 ---
 title: "Data Cleaning Techniques"
 date: 2018-10-31
-tags: [data science, data cleaning]
 header:
   image: "/images/datacleaning/cleaning.jpg"
 excerpt: "Data Cleaning, Data Science"
