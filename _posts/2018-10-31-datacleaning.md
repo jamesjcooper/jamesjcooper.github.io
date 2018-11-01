@@ -1,9 +1,9 @@
 ---
-title: "Getting Started with Data Cleaning"
+title: "Data Cleaning Techniques"
 date: 2018-10-31
 tags: [data science, data cleaning]
 header:
-  image: "/images/datacleaning/datacleaning.jpg"
+  image: "/images/datacleaning/cleaning.jpg"
 excerpt:"Data Cleaning, Data Science"
 mathjax: "true"
 ---
