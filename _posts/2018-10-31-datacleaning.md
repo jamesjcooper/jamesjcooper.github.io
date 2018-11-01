@@ -4,7 +4,7 @@ date: 2018-10-31
 tags: [data science, data cleaning]
 header:
   image: "/images/datacleaning/cleaning.jpg"
-excerpt:"Data Cleaning, Data Science"
+excerpt: "Data Cleaning, Data Science"
 mathjax: "true"
 ---
 
@@ -20,7 +20,7 @@ And here's some *italics*
 
 Here's some **bold** text.
 
-What  about a [link](https://github.com/jamesjcooper)
+What about a [link](https://github.com/jamesjcooper)
 
 Here's a bulleted list:
 * First Item
