@@ -40,18 +40,22 @@ Python code block:
       z = np.sum(x,y)
       return z
 ```
+R code block:
+```r
 
-'''r
 library(tidyverse)
-'''
+df <- read_csv("some_file.csv")
+head(df)
 
-Here's some inline code 'x+y'
+```
+
+Here's some inline code `x+y`.
 
 Here's an image:
-<img src="{{ site.url }}{{ site.baseurl }}/images/datacleaning/datacleaning.jpg" alt="linearly separable data">
+<img src="{{ site.url }}{{ site.baseurl }}/images/datacleaning/cleaning.jpg" alt="linearly separable data">
 
 Here's another image using Kramdown:
-![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/datacleaning.jpg)
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/cleaning.jpg)
 
 Here's some math:
 
