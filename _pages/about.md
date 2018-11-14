@@ -11,5 +11,5 @@ while working as an analylst in housing finance, and more recently completed a D
 datasets in the digital marketing sphere. I have a broad interest in data and love exploring new concepts in machine learning, data visualization,
 and data mining.
 
-In my spare time I enjoy coffee, playing guitar, cycling, and travelling the world with my wife (when time allows)
+In my spare time I enjoy coffee, playing guitar, cycling and analyzing workouts, and travelling the world with my wife (when time allows). 
 

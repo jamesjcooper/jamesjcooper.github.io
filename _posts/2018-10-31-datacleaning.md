@@ -7,7 +7,7 @@ excerpt: "Data Cleaning, Data Science"
 mathjax: "true"
 ---
 
-We're all familiar with the fact that data cleaning is a huge part of data science. 
+#### We're all familiar with the fact that data cleaning is a huge part of data science. 
 The truth is, data is messy, and if it wasn't it wouldn't be nearly as hard 
 to analyze it. When thought of like most anything else, a lot of groundwork goes 
 into constructing something impressive. An architect relies on surverying, planning, 
@@ -18,7 +18,7 @@ beginning techniques that can be used to explore your data, take care of missing
 transform your data, along with identifying and taking care of outliers. These techniques 
 represent just a few of a whole multitude of techniques, but provide a good start. 
 
-# Clean Data, the Final Frontier
+# Know Your Data
 
 One of the most important things you will quickly learn in data science is that you must,
 must know what your data is all about before diving into anything. Where are the issues?
@@ -31,6 +31,7 @@ be it the sales team that might use the data, or the business development team w
 in order to fully understand the objectives of what you or they want out of the data. This 
 can guide your strategy when it comes time to dive in. 
 
+# 1. Exploration
 In this example I am using a sample bank dataset with features such as age, income, region, gender, 
 children, and categorical data consisting of 'yes' and 'no' answers regarding if a particular 
 subject is married, has a savings account, mortgage, etc. Each row is a different client with 
@@ -190,9 +191,9 @@ bank_data.info()
     dtypes: float64(2), int64(1), object(9)
     memory usage: 56.3+ KB
 
-I like to get some basic info, and then reset the index and calculate the percentage of complete data you have,
+I like to get some basic info, then reset the index and calculate the percentage of complete data you have,
 data with no missing values in each column. Here we can see the 26% of the age category is missing, nearly 19% 
-of the income category, etc. Also taking the sum using the isna() function in Python will give the count of missing
+of the income category, 18% of gender and 14% of region. Also taking the sum using the isna() function in Python will give the count of missing
 values per column. To get the row count we would just specify axis = 1. Below is just column count:
 ```python
 bank_data.columns
@@ -458,9 +459,30 @@ breakdown
 </table>
 </div>
 
+```python
+print('Missing Values per Column:')
+print(bank_data.isna().sum())
+```
 
+    Missing Values per Column:
+    id                0
+    age             161
+    income          113
+    children          0
+    gender          107
+    region           84
+    married           0
+    car               0
+    savings_acct      0
+    current_acct      0
+    mortgage          0
+    pep               0
+    age_cats        170
+    dtype: int64
+    
 
-
+So we know we have missing data in 4 of the columns. One option for dealing with missing data is to remove the missing columns entirely.
+Before doing this it is wise to explore other options - maybe filling in with the mean, median, or mode of a column. 
  
 
 
