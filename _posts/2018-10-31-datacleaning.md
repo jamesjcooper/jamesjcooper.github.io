@@ -1,13 +1,11 @@
 ---
 title: "Exploratory Analysis and Some Simple Data Cleaning Techniques"
 date: 2018-10-31
-header:
-  image: "/images/datacleaning/cleaning.jpg"
+#header:
+#  image: "/images/datacleaning/cleaning.jpg"
 excerpt: "Data Cleaning, Data Science"
 mathjax: "true"
 ---
-
-# The Waiting is the Hardest Part
 
 We're all familiar with the fact that data cleaning is a huge part of data science. 
 The truth is, data is messy, and if it wasn't it wouldn't be nearly as hard 
@@ -15,7 +13,7 @@ to analyze it. When thought of like most anything else, a lot of groundwork goes
 into constructing something impressive. An architect relies on surverying, planning, 
 and blueprints. Athletes must build up fitness to achieve peak performance, and data 
 scientists must clean data in order to model it. It's not glamorous, but it is *extremely* 
-importantin this realm. This is the reasoning behind this post about a few simple
+important in this realm. This is the reasoning behind this post about a few simple
 beginning techniques that can be used to explore your data, take care of missing data, 
 transform your data, along with identifying and taking care of outliers. These techniques 
 represent just a few of a whole multitude of techniques, but provide a good start. 
@@ -26,12 +24,29 @@ One of the most important things you will quickly learn in data science is that 
 must know what your data is all about before diving into anything. Where are the issues?
 Are there outliers? Missing Data? Weird values? Are there some easily detectable patterns 
 when first observing? This is the ground level exploration that must be completed. To know
-your data is to love your data - that should be your mantra. It should also be noted that 
-this stretches beyond just coding - you must talk to the experts around you! Before diving 
+your data is to love your data. It should also be noted that 
+this stretches beyond just coding - you must talk to the domain experts around you! Before diving 
 into any project, I like the idea of meeting with anyone you can who is involved with the data,
-be it the sales team that might use the data, or the business analyst who will present results, 
+be it the sales team that might use the data, or the business development team who will present results, 
 in order to fully understand the objectives of what you or they want out of the data. This 
-can guide your strategy when it comes time to dive in. Now, on to the exploration.
+can guide your strategy when it comes time to dive in. 
+
+In this example I am using a sample bank dataset with features such as age, income, region, gender, 
+children, and categorical data consisting of 'yes' and 'no' answers regarding if a particular 
+subject is married, has a savings account, mortgage, etc. Each row is a different client with 
+a unique id, and each column consists of the variables mentioned before. 
+
+The first thing I like to do would be to get the layout of the dataset, so looking at the columns and the
+descriptive statistics to get an idea of the data types, the amount of missing values, the mean, count, 
+standard deviation, etc. After reading in the file, here is an example of breaking it down
+
+```python
+
+ bank_data.head()
+ 
+```
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/datacleaning/head.jpg" alt="linearly separable data">
 
  
 
