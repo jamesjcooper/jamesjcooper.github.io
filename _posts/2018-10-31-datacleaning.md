@@ -44,7 +44,7 @@ standard deviation, etc. After reading in the file, here is an example of breaki
 
  bank_data.head()
 ```
-<img src="{{ site.url }}{{ site.baseurl }}/images/datacleaning/head.jpg" alt="linearly separable data">
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/head.jpg)
 
  
 
