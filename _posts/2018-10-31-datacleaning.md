@@ -40,10 +40,17 @@ The first thing I like to do would be to get the layout of the dataset, so looki
 descriptive statistics to get an idea of the data types, the amount of missing values, the mean, count, 
 standard deviation, etc. After reading in the file, here is an example of breaking it down:
 
-```python
- bank_data.head()
-```
+Read the file in and look at the first five rows:
 ![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/head.JPG)
+
+I like to get some basic info, and then reset the index and calculate the percentage of complete data you have,
+data with no missing values in each column. Here we can see the 26% of the age category is missing, nearly 19% 
+of the income category, etc. Also taking the sum using the isna() function in Python will give the count of missing
+values per column. To get the row count we would just specify axis = 1. Below is just column count:
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/info.JPG)
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/columns.JPG)
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/breakdown.JPG)
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/missing_column.JPG)
 
  
 

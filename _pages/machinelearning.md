@@ -4,7 +4,7 @@ permalink: /machine-learning/
 title: "Data Science Posts"
 author_profile: true
 header:
-  image: "/images/machinelearning.png"    
+  #image: "/images/machinelearning.png"    
 ---
 
 {% include base_path %}
