@@ -38,13 +38,12 @@ a unique id, and each column consists of the variables mentioned before.
 
 The first thing I like to do would be to get the layout of the dataset, so looking at the columns and the
 descriptive statistics to get an idea of the data types, the amount of missing values, the mean, count, 
-standard deviation, etc. After reading in the file, here is an example of breaking it down
+standard deviation, etc. After reading in the file, here is an example of breaking it down:
 
 ```python
-
  bank_data.head()
 ```
-![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/head.jpg)
+![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/cleaning.jpg)
 
  
 
