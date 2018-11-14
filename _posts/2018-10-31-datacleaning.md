@@ -41,7 +41,154 @@ descriptive statistics to get an idea of the data types, the amount of missing v
 standard deviation, etc. After reading in the file, here is an example of breaking it down:
 
 Read the file in and look at the first five rows:
-![alt]({{ site.url }}{{ site.baseurl }}/images/datacleaning/head.JPG)
+```python
+bank_data = pd.read_csv('bank_data_missing.csv', sep=',')
+```
+
+
+```python
+bank_data.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>age</th>
+      <th>income</th>
+      <th>children</th>
+      <th>gender</th>
+      <th>region</th>
+      <th>married</th>
+      <th>car</th>
+      <th>savings_acct</th>
+      <th>current_acct</th>
+      <th>mortgage</th>
+      <th>pep</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>ID12101</td>
+      <td>48.0</td>
+      <td>17546.0</td>
+      <td>1</td>
+      <td>FEMALE</td>
+      <td>INNER_CITY</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>YES</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ID12102</td>
+      <td>40.0</td>
+      <td>30085.1</td>
+      <td>3</td>
+      <td>MALE</td>
+      <td>TOWN</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ID12103</td>
+      <td>51.0</td>
+      <td>16575.4</td>
+      <td>0</td>
+      <td>FEMALE</td>
+      <td>INNER_CITY</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ID12104</td>
+      <td>23.0</td>
+      <td>20375.4</td>
+      <td>3</td>
+      <td>FEMALE</td>
+      <td>TOWN</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>NO</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ID12105</td>
+      <td>57.0</td>
+      <td>50576.3</td>
+      <td>0</td>
+      <td>FEMALE</td>
+      <td>RURAL</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>YES</td>
+      <td>NO</td>
+      <td>NO</td>
+      <td>NO</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+bank_data.info()
+```
+
+    <class 'pandas.core.frame.DataFrame'>
+    RangeIndex: 600 entries, 0 to 599
+    Data columns (total 12 columns):
+    id              600 non-null object
+    age             439 non-null float64
+    income          487 non-null float64
+    children        600 non-null int64
+    gender          493 non-null object
+    region          516 non-null object
+    married         600 non-null object
+    car             600 non-null object
+    savings_acct    600 non-null object
+    current_acct    600 non-null object
+    mortgage        600 non-null object
+    pep             600 non-null object
+    dtypes: float64(2), int64(1), object(9)
+    memory usage: 56.3+ KB
 
 I like to get some basic info, and then reset the index and calculate the percentage of complete data you have,
 data with no missing values in each column. Here we can see the 26% of the age category is missing, nearly 19% 
